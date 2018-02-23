@@ -15,7 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.conf.urls import url
+from HammerHandleWeb.views import main;
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    url('admin/', admin.site.urls),
+    url(r'^$', main.index, name='root'),
+    url(r'^index.htm', main.index, name='home'),
 ]

@@ -30,7 +30,7 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 LANGUAGES = (
-    ('en-US', _('English')),
+    ('en', _('English')),
     ('es', _('Spanish')),
     ('ca', _('Catalan'))
 )

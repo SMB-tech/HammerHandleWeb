@@ -27,6 +27,18 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+#LANGUAGES = (
+#    ('en-US', _('English')),
+#    ('es', _('Spanish')),
+#    ('ca', _('Catalan'))
+#)
+
+LANGUAGE_CODE = 'en-US'
+
+# the path where your translation strings are stored
+LOCALE_PATHS = (
+    os.path.join(BASE_DIR, 'locale'),
+)
 
 # Application definition
 
@@ -64,6 +76,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django.template.context_processors.i18n',
             ],
         },
     },

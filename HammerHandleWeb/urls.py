@@ -15,11 +15,16 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from django.conf.urls import url
-from HammerHandleWeb.views import main;
+from django.conf.urls import url, include
+from HammerHandleWeb.views import main
+from HammerHandleWeb.views.army_creation import main as army_creation_main
 
 urlpatterns = [
     url('admin/', admin.site.urls),
     url(r'^$', main.index, name='root'),
     url(r'^index.htm', main.index, name='home'),
+    url(r'^army_creation/main.html', army_creation_main.index, name='army_creation_main'),
+
+    #Languages
+    url(r'^i18n/', include('django.conf.urls.i18n')),
 ]

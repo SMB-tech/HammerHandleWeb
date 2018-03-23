@@ -1,0 +1,30 @@
+.hammer_img {
+    height: 50px;
+}
+
+.home_img {
+    position: absolute;
+}
+ul.menu li {
+    padding: 20px;
+    display: inline-block;
+}
+
+
+ul.menu li:hover {
+    background-color: rgba(255,255,255,0.5);
+}
+
+ul.menu li a {
+    color: white;
+}
+
+ul.menu {
+    height: 50px;
+    list-style: none;
+    margin-left: 60px;
+}
+
+#page_header {
+    background-color: black;
+}

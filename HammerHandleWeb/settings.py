@@ -31,8 +31,8 @@ ALLOWED_HOSTS = []
 
 LANGUAGES = (
     ('en', _('English')),
-    ('es', _('Spanish')),
-    ('ca', _('Catalan'))
+    ('es_ES', _('Spanish')),
+    ('ca_ES', _('Catalan'))
 )
 
 LANGUAGE_CODE = 'en'

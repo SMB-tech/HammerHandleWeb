@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 """
 
 import os
+import inspect
+from django.utils.translation import gettext_lazy as _
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -27,13 +29,13 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-#LANGUAGES = (
-#    ('en-US', _('English')),
-#    ('es', _('Spanish')),
-#    ('ca', _('Catalan'))
-#)
+LANGUAGES = (
+    ('en-US', _('English')),
+    ('es', _('Spanish')),
+    ('ca', _('Catalan'))
+)
 
-LANGUAGE_CODE = 'en-US'
+LANGUAGE_CODE = 'en'
 
 # the path where your translation strings are stored
 LOCALE_PATHS = (
@@ -55,11 +57,15 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'arches.app.utils.middleware.TokenMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'arches.app.utils.middleware.JWTAuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'arches.app.utils.middleware.SetAnonymousUser',
 ]
 
 ROOT_URLCONF = 'HammerHandleWeb.urls'

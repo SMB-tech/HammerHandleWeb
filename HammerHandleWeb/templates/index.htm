@@ -1,9 +1,8 @@
 {% extends 'base.html' %}
 {% load staticfiles %}
-
+{% load i18n %}
 
 
 {% block body %}
-
     <button><a href="{% url 'army_creation_main' %}">{% trans 'Create army' %}</a></button>
 {% endblock %}

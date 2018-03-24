@@ -30,12 +30,12 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 LANGUAGES = (
-    ('en_UK', _('English')),
-    ('es_ES', _('Spanish')),
-    ('ca_ES', _('Catalan'))
+    ('en', _('English')),
+    ('es', _('Spanish')),
+    ('ca', _('Catalan'))
 )
 
-LANGUAGE_CODE = 'en_UK'
+LANGUAGE_CODE = 'en'
 
 # the path where your translation strings are stored
 LOCALE_PATHS = (
@@ -121,15 +121,13 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/2.0/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
-
 TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
 USE_L10N = True
 
-USE_TZ = True
+USE_TZ = False
 
 
 # Static files (CSS, JavaScript, Images)

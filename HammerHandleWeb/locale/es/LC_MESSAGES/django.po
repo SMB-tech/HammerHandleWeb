@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-23 21:15+0100\n"
+"POT-Creation-Date: 2018-03-25 00:23+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,34 +17,34 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: .\HammerHandleWeb\settings.py:33
+#: .\settings.py:33
 msgid "English"
-msgstr "kkk"
+msgstr "Inglés"
 
-#: .\HammerHandleWeb\settings.py:34
+#: .\settings.py:34
 msgid "Spanish"
-msgstr "kkk"
+msgstr "Castellano"
 
-#: .\HammerHandleWeb\settings.py:35
+#: .\settings.py:35
 msgid "Catalan"
-msgstr "kkk"
+msgstr "Catalán"
 
-#: .\HammerHandleWeb\templates\base.html:24
+#: .\templates\base.html:25
 msgid "Home"
-msgstr "kkk"
+msgstr "Inicio"
 
-#: .\HammerHandleWeb\templates\base.html:27
+#: .\templates\base.html:28
 msgid "Create army"
-msgstr "kkk"
+msgstr "Crear ejercito"
 
-#: .\HammerHandleWeb\templates\base.html:30
+#: .\templates\base.html:31
 msgid "Start game"
-msgstr "kkk"
+msgstr "Empezar partida"
 
-#: .\HammerHandleWeb\templates\base.html:33
+#: .\templates\base.html:34
 msgid "Check rules"
-msgstr "kkk"
+msgstr "Revisar reglas"
 
-#: .\HammerHandleWeb\templates\base.html:37
+#: .\templates\base.html:38
 msgid "Languages"
-msgstr "kkk"
+msgstr "Idiomas"

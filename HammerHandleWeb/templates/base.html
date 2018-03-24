@@ -8,6 +8,7 @@
     <title>Title</title>
     <link rel="shortcut icon" href="{% static 'img/favicon.png' %}" />
     <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link href="{% static 'lib/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
     <script src="{% static 'lib/bootstrap/js/bootstrap.min.js' %}"></script>
 </head>
@@ -43,7 +44,7 @@
                             <input name="next" type="hidden" value="{{ request.path }}" />
                             {% csrf_token %}
                             <input name="language" type="hidden" value="{{ lang.0 }}" />
-                            <a href="javascript:{}"  value="{{ lang.0 }}" onclick="document.getElementById('lang-form-{{ lang.0 }}').submit();">{{ lang.1 }} {% if lang.0|upper == LANGUAGE_CODE|upper %}<i class="fa fa-check"></i>{% endif %}</a>
+                            <a href="javascript:{}"  value="{{ lang.0 }}" onclick="document.getElementById('lang-form-{{ lang.0 }}').submit();">{{ lang.1 }}</a>
                             </form>
                         </li>
                         {% endfor %}

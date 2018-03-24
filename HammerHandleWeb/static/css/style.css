@@ -13,7 +13,8 @@ ul.menu li {
 ul.menu li a {
     padding: 20px;
     position: relative;
-    display: block
+    display: block;
+    color: white;
 }
 
 
@@ -22,7 +23,7 @@ ul.menu li:hover {
 }
 
 ul.menu li a {
-    color: white;
+
 }
 
 ul.menu {
@@ -59,8 +60,7 @@ ul.lenguages:after {
 }
 
 ul.lenguages {
-    top: 46px;
-    left: 9px;
+    top: 64px;
     display: none;
     padding: 4px 0;
     padding-left: 0;

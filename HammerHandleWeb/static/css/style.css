@@ -6,8 +6,14 @@
     position: absolute;
 }
 ul.menu li {
-    padding: 20px;
+
     display: inline-block;
+}
+
+ul.menu li a {
+    padding: 20px;
+    position: relative;
+    display: block
 }
 
 
@@ -27,4 +33,75 @@ ul.menu {
 
 #page_header {
     background-color: black;
+}
+
+/** LANGUAGES  selector -sbernad- */
+
+
+#lang-selector:hover + ul.lenguages {
+    display: block;
+}
+
+
+ul.lenguages:after {
+    top: -4px;
+    width: 0;
+    height: 0;
+    left: 8px;
+    content: " ";
+    display: block;
+    position: absolute;
+    border-bottom: 6px solid #f0f0f0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-left-style: inset; /*FF fixes*/
+    border-right-style: inset; /*FF fixes*/
+}
+
+ul.lenguages {
+    top: 46px;
+    left: 9px;
+    display: none;
+    padding: 4px 0;
+    padding-left: 0;
+    list-style: none;
+    min-width: 100px;
+    position: absolute;
+    background: #f0f0f0;
+}
+
+ul.lenguages li a {
+    color: #555;
+    display: block;
+    font-size: 10px;
+    padding: 2px 12px;
+    margin-bottom: 1px;
+    text-transform: uppercase;
+}
+
+ul.lenguages li.active a i {
+    color: #999;
+    float: right;
+    margin-top: 5px;
+}
+
+ul.lenguages li a:hover/*,
+ul.lenguages li.active a*/ {
+    background: #fafafa;
+}
+
+ul.lenguages li a:hover {
+    text-decoration: none;
+}
+
+ul.lenguages:after{
+	display:none;
+}
+
+ul.lenguages:hover {
+    display: block;
+}
+
+.page-scroll {
+    position: relative;
 }

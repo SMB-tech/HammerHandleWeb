@@ -32,6 +32,24 @@
                 <li class="page-scroll">
                     <a href="#news">{% trans 'Check rules' %}</a>
                 </li>
+                <li class="page-scroll">
+                 {% get_current_language as LANGUAGE_CODE %}
+                    <a id="lang-selector">{% trans "Languages" %}</a>
+                    <ul class="lenguages">
+                        {% for lang in LANGUAGES %}
+                        <li class="active">
+                            <form id="lang-form-{{ lang.0 }}" action="{% url 'set_language' %}" method="post">
+
+                            <input name="next" type="hidden" value="{{ request.path }}" />
+                            {% csrf_token %}
+                            <input name="language" type="hidden" value="{{ lang.0 }}" />
+                            <a href="javascript:{}"  value="{{ lang.0 }}" onclick="document.getElementById('lang-form-{{ lang.0 }}').submit();">{{ lang.1 }} {% if lang.0|upper == LANGUAGE_CODE|upper %}<i class="fa fa-check"></i>{% endif %}</a>
+                            </form>
+                        </li>
+                        {% endfor %}
+
+                    </ul>
+                </li>
             </ul>
         </div>
     </nav>

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-23 18:28+0000\n"
+"POT-Creation-Date: 2018-03-23 21:15+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,32 +16,35 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: HammerHandleWeb/settings.py:33
+#: .\HammerHandleWeb\settings.py:33
 msgid "English"
 msgstr ""
 
-#: HammerHandleWeb/settings.py:34
+#: .\HammerHandleWeb\settings.py:34
 msgid "Spanish"
 msgstr ""
 
-#: HammerHandleWeb/settings.py:35
+#: .\HammerHandleWeb\settings.py:35
 msgid "Catalan"
 msgstr ""
 
-#: HammerHandleWeb/templates/base.html:24
+#: .\HammerHandleWeb\templates\base.html:24
 msgid "Home"
 msgstr ""
 
-#: HammerHandleWeb/templates/base.html:27
+#: .\HammerHandleWeb\templates\base.html:27
 msgid "Create army"
 msgstr ""
 
-#: HammerHandleWeb/templates/base.html:30
+#: .\HammerHandleWeb\templates\base.html:30
 msgid "Start game"
 msgstr ""
 
-#: HammerHandleWeb/templates/base.html:33
+#: .\HammerHandleWeb\templates\base.html:33
 msgid "Check rules"
+msgstr ""
+
+#: .\HammerHandleWeb\templates\base.html:37
+msgid "Languages"
 msgstr ""

@@ -30,12 +30,12 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 LANGUAGES = (
-    ('en', _('English')),
+    ('en_UK', _('English')),
     ('es_ES', _('Spanish')),
     ('ca_ES', _('Catalan'))
 )
 
-LANGUAGE_CODE = 'en'
+LANGUAGE_CODE = 'en_UK'
 
 # the path where your translation strings are stored
 LOCALE_PATHS = (
